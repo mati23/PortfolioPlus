@@ -1,0 +1,16 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<p> Topics </p>
+
+<ul>
+  {% for topic in topics %}
+  <li>{{topic}}</li>
+  {% empty %}
+  <li>No topics</li>
+  {% endfor %}
+
+</ul>
+LOOOOOOOOOOOL
+{% endblock content%}
