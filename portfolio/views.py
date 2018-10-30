@@ -6,8 +6,7 @@ def index(request):
     return render(request, 'portfolio/index.html')
 
 def topics(request):
-    topics = Topic.objects.order_by('date_added')
-    context = {'topics' : topics}
-    return render(request, 'templates/portfolio/topics.html', context)
+    """pagina inicial de portfolio"""
+    return render(request, 'portfolio/topics.html')
 
 # Create your views here.

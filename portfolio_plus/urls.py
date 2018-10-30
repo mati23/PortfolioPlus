@@ -18,10 +18,12 @@ from django.urls import path
 from django.conf.urls import include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #referencia as urls de portfolio
     path('', include('portfolio.urls', namespace='portfolio')),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()

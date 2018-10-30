@@ -21,10 +21,10 @@
             <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="{% url 'portfolio:index'%}">Features</a>
+            <a class="nav-link text-white" href="{% url 'portfolio:index' %}">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="{% url 'portfolio:topics'%}">Pricing</a>
+            <a class="nav-link text-white" href="{% url 'portfolio:topics' %}">Pricing</a>
           </li>
         </ul>
         <span class="navbar-text">
@@ -34,7 +34,7 @@
 </nav>
 
     <p>
-      <a href="{% url 'portfolio:index' %}"> Portfolio</a>
+      <a href="{% url 'portfolio:topics' %}"> Portfolio</a>
     </p>
     {% block content %} {% endblock content %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

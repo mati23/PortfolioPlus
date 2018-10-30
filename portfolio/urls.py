@@ -1,12 +1,13 @@
 """Padroes de URLS de portfolio"""
 
 from django.conf.urls import url
+from django.urls import path
 from . import views
 
 app_name = 'portfolio'
 urlpatterns = [
     #pagina inicial
-    url('', views.index, name = 'index'),
-    url('topics/$', views.topics, name = 'topics')
+    path('', views.index, name = 'index'),
+    path('topics/', views.topics, name = 'topics'),
 
 ]
