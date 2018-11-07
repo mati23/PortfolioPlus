@@ -1,0 +1,13 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<p> Adicione um novo topico</p>
+
+<form class="" action="{% url 'portfolio:new_topic' %}" method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <button name="submit">Add</button>
+</form>
+
+{% endblock content %}

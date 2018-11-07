@@ -9,5 +9,6 @@ urlpatterns = [
     #pagina inicial
     path('', views.index, name = 'index'),
     path('topics/', views.topics, name = 'topics'),
+    path('new_topic/', views.new_topic, name = 'new_topic'),
 
 ]
