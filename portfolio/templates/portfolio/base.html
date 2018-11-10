@@ -26,9 +26,16 @@
           <li class="nav-item">
             <a class="nav-link text-white" href="{% url 'portfolio:topics' %}">Pricing</a>
           </li>
+
         </ul>
         <span class="navbar-text">
-          Navbar text with an inline element
+          {% if user.is_authenticaded %}
+            Ola, {{user.username}}
+          {% else %}
+            
+              <a class="nav-link text-white" href="{% url 'users:login' %}">Log in</a>
+
+          {% endif %}
         </span>
       </div>
 </nav>
