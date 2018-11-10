@@ -29,12 +29,10 @@
 
         </ul>
         <span class="navbar-text">
-          {% if user.is_authenticaded %}
+          {% if user.is_authenticated %}
             Ola, {{user.username}}
           {% else %}
-            
-              <a class="nav-link text-white" href="{% url 'users:login' %}">Log in</a>
-
+            <a class="nav-link text-white" href="{% url 'users:login' %}">Log in</a>
           {% endif %}
         </span>
       </div>
