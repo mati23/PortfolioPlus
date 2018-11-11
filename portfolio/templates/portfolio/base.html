@@ -29,11 +29,19 @@
 
         </ul>
         <span class="navbar-text">
-          {% if user.is_authenticated %}
-            Ola, {{user.username}}
-          {% else %}
-            <a class="nav-link text-white" href="{% url 'users:login' %}">Log in</a>
-          {% endif %}
+          <ul class="navbar-nav mr-auto">
+            {% if user.is_authenticated %}
+
+            <li class="nav-item"> </li>
+              <li class="nav-item">
+                <form class="" action="{% url 'users:logout' %}">
+                Ola, {{user.username}}!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" name="" class="btn btn-danger my-2 my-sm-0" value="Log Out">
+                </form>
+               </li>
+            {% else %}
+            <li>  <a class="nav-link text-white" href="{% url 'users:login' %}">Log in</a></li>
+            {% endif %}
+          </ul>
         </span>
       </div>
 </nav>
