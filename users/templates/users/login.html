@@ -18,7 +18,7 @@
     {% csrf_token %}
     {{ form.as_p }}
     <button name="submit">Login</button>
-    <input type="hidden" name="next" value="{% url 'portfolio:index' %}">
+    <input type="hidden" name="next" value="{% url 'users:profile_page' %}">
   </form>
 
 {% endblock content %}
